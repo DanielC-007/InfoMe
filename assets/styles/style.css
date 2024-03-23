@@ -1,0 +1,205 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+/*Itens no geral */
+body {
+  background-color: black;
+  position: relative;
+}
+
+header {
+  color: #ffffff;
+  background-color: #202020;
+  text-align: center;
+  padding: 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+header button {
+  position: absolute;
+}
+
+header h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 25px;
+}
+
+p {
+  margin: 10px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 25px;
+  border: solid rgb(255, 255, 0);
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  width: 350px;
+  height: 100px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgb(255, 255, 0), 0px 0px 15px rgb(255, 255, 0) inset;
+}
+
+img {
+  width: 75px;
+  margin: 25px;
+}
+
+/* footer {
+  background-color: #303030;
+  text-align: center;
+  color: white;
+  width: 100%;
+  bottom: 0;
+} */
+
+/* main{
+  width: 500px;
+  background-color: blue;
+} */
+
+nav {
+  width: 100vw;
+  height: fit-content;
+  background-color: #383838;
+  text-align: center;
+}
+
+nav img {
+  width: 300px;
+  height: 300px;
+  border: solid rgb(255, 255, 0);
+  border-radius: 25px;
+}
+
+/* Classes */
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+}
+
+/* .container3{
+  display: block;
+  width: 100%;
+  height: 25px;
+  background-color: blue;
+} */
+
+.imgmusics img {
+  height: 300px;
+  width: 300px;
+  padding: 0px;
+  margin: 5px;
+  border: solid rgb(255, 255, 0);
+  border-radius: 25px;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.imgmusics img:hover {
+  filter: grayscale(0%);
+  animation: pulse 1.5s infinite;
+  box-shadow: 0px 0px 15px rgb(255, 255, 0), 0px 0px 15px rgb(255, 255, 0) inset;
+}
+
+/* Ids */
+#Euzinho {
+  border-radius: 25px;
+  border: solid rgb(255, 255, 0);
+  width: 300px;
+  margin: 25px;
+}
+
+#ytbnt {
+  border-color: red;
+}
+
+#ytbnt:hover {
+  box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
+}
+
+#insbnt {
+  border-color: #ff00dd;
+}
+
+#insbnt:hover {
+  box-shadow: 0px 0px 15px #ff00dd, 0px 0px 15px #ff00dd inset;
+}
+
+#tikbnt {
+  border-color: cyan;
+
+}
+
+#tikbnt:hover {
+  box-shadow: 0px 0px 15px cyan, 0px 0px 15px cyan inset;
+}
+
+#back {
+  width: auto;
+  height: auto;
+  border: none;
+  border-radius: 100%;
+  background-color: #000;
+  margin: 0px;
+  margin-left: -10px;
+  padding: 5px;
+}
+
+#back img {
+  height: 70px;
+  width: 70px;
+  margin: 0px;
+  margin-left: 0px;
+}
+
+#back:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* sei lá */
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
