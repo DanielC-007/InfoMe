@@ -1,5 +1,5 @@
 <p align="center">
-<img height="200" width="200" src="https://github.com/DanielC-007/InfoMe/assets/140892651/a904e573-2b42-47ee-ac36-97a02a5c6139"
+<img height="200" width="200" src="https://github.com/DanielC-007/InfoMe/assets/140892651/f85a2263-f464-491b-80ac-e645737ce4a0"
 </p>
 
 # InfoMe
