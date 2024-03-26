@@ -5,4 +5,4 @@
 # InfoMe
 Neste web site é possível acessar as minhas redes sociais como youtube, instagram, tiktok e github. Também é possível saber mais informações sobre cada música criada. As Partituras estão no repositório "Partituras" e no próprio web site:
 
-[Ver partituras](https://github.com/DanielC-007/Partituras)![incon]()
+[Ver partituras](https://github.com/DanielC-007/Partituras)
