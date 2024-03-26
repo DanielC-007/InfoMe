@@ -168,6 +168,14 @@ nav img {
   box-shadow: 0px 0px 15px cyan, 0px 0px 15px cyan inset;
 }
 
+#gitbnt{
+  border-color: #fff;
+}
+
+#gitbnt:hover{
+ box-shadow: 0px 0px 15px white, 0px 0px 15px black inset;
+}
+
 #back {
   width: auto;
   height: auto;
