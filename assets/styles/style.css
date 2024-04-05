@@ -13,7 +13,7 @@ body {
 
 header {
   color: #ffffff;
-  background-color: #202020;
+  background-color: #1c1c1c;
   text-align: center;
   padding: 15px;
   height: 60px;
@@ -86,10 +86,11 @@ img {
 } */
 
 nav {
-  width: 100vw;
+  width: 400px;
   height: fit-content;
-  background-color: #383838;
+  background-color: #2c2c2c;
   text-align: center;
+  border-bottom-right-radius: 15px;
 }
 
 nav img {
@@ -111,17 +112,14 @@ nav img {
   display: flex;
 }
 
-/* .container3{
-  display: block;
-  width: 100%;
-  height: 25px;
-  background-color: blue;
-} */
+.imgmusics{
+  padding: 5px;
+}
 
 .imgmusics img {
   height: 300px;
   width: 300px;
-  padding: 0px;
+  padding: 3px;
   margin: 5px;
   border: solid rgb(255, 255, 0);
   border-radius: 25px;
@@ -173,7 +171,7 @@ nav img {
 }
 
 #gitbnt:hover{
- box-shadow: 0px 0px 15px white, 0px 0px 15px black inset;
+  box-shadow: 0px 0px 15px white, 0px 0px 15px black inset;
 }
 
 #back {
@@ -185,6 +183,18 @@ nav img {
   margin: 0px;
   margin-left: -10px;
   padding: 5px;
+}
+
+#subContainer{
+  padding: 10px;
+  width: calc(100vw - 400px);
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+#ASbnt{
+  width: min-content;
 }
 
 #back img {
@@ -209,5 +219,22 @@ nav img {
 
   50% {
     transform: scale(1.05);
+  }
+}
+
+/* Ajuste para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  nav{
+    width: auto;
+    border-bottom-left-radius: 15px;
+  }
+
+
+  .container2 {
+    flex-direction: column;
+  }
+
+  #subContainer {
+    width: auto;
   }
 }
