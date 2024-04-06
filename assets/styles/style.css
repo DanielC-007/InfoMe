@@ -17,15 +17,15 @@ header {
   text-align: center;
   padding: 15px;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: relative;
+  /* justify-content: space-between;
+  align-items: center;
+  display: flex;*/
 }
 
-header button {
+/* header button {
   position: absolute;
-}
+} */
 
 header h1 {
   position: absolute;
@@ -33,7 +33,7 @@ header h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-size: 25px;
+
 }
 
 p {
@@ -78,11 +78,6 @@ img {
   color: white;
   width: 100%;
   bottom: 0;
-} */
-
-/* main{
-  width: 500px;
-  background-color: blue;
 } */
 
 nav {
@@ -174,7 +169,7 @@ nav img {
   box-shadow: 0px 0px 15px white, 0px 0px 15px black inset;
 }
 
-#back {
+/* #back {
   width: auto;
   height: auto;
   border: none;
@@ -183,7 +178,7 @@ nav img {
   margin: 0px;
   margin-left: -10px;
   padding: 5px;
-}
+} */
 
 #subContainer{
   padding: 10px;
@@ -229,6 +224,13 @@ nav img {
     border-bottom-left-radius: 15px;
   }
 
+  header{
+    height: 15px;
+  }
+
+  header h1{
+    font-size: 20px;
+  }
 
   .container2 {
     flex-direction: column;
