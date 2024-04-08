@@ -107,7 +107,7 @@ nav img {
   display: flex;
 }
 
-.imgmusics{
+.imgmusics {
   padding: 5px;
 }
 
@@ -161,11 +161,11 @@ nav img {
   box-shadow: 0px 0px 15px cyan, 0px 0px 15px cyan inset;
 }
 
-#gitbnt{
+#gitbnt {
   border-color: #fff;
 }
 
-#gitbnt:hover{
+#gitbnt:hover {
   box-shadow: 0px 0px 15px white, 0px 0px 15px black inset;
 }
 
@@ -180,7 +180,7 @@ nav img {
   padding: 5px;
 } */
 
-#subContainer{
+#subContainer {
   padding: 10px;
   width: calc(100vw - 400px);
   text-align: center;
@@ -188,7 +188,7 @@ nav img {
   place-items: center;
 }
 
-#ASbnt{
+#ASbnt {
   width: min-content;
 }
 
@@ -219,16 +219,16 @@ nav img {
 
 /* Ajuste para dispositivos móveis */
 @media only screen and (max-width: 600px) {
-  nav{
+  nav {
     width: auto;
     border-bottom-left-radius: 15px;
   }
 
-  header{
+  header {
     height: 15px;
   }
 
-  header h1{
+  header h1 {
     font-size: 20px;
   }
 
