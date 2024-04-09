@@ -8,32 +8,20 @@
 /*Itens no geral */
 body {
   background-color: black;
-  position: relative;
 }
 
 header {
-  color: #ffffff;
   background-color: #1c1c1c;
-  text-align: center;
-  padding: 15px;
-  height: 60px;
-  position: relative;
-  /* justify-content: space-between;
+  justify-content: space-between;
+  /* display: flex; */
   align-items: center;
-  display: flex;*/
+  text-align: center;
+  padding: 10px;
+  height: 65px;
 }
 
-/* header button {
-  position: absolute;
-} */
-
-header h1 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-
+header h1{
+  margin-top: 1vw;
 }
 
 p {
@@ -52,7 +40,7 @@ button {
   font-size: 40px;
   padding: 10px;
   border-radius: 25px;
-  border: solid rgb(255, 255, 0);
+  border: solid #bd0000;
   margin: 10px;
   align-items: center;
   display: flex;
@@ -63,7 +51,7 @@ button {
 button:hover {
   background-color: #2c2c2c;
   cursor: pointer;
-  box-shadow: 0px 0px 15px rgb(255, 255, 0), 0px 0px 15px rgb(255, 255, 0) inset;
+  box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
 }
 
 img {
@@ -90,7 +78,7 @@ nav {
 nav img {
   width: 300px;
   height: 300px;
-  border: solid rgb(255, 255, 0);
+  border: solid #bd0000;
   border-radius: 25px;
 }
 
@@ -106,6 +94,14 @@ nav img {
   display: flex;
 }
 
+.subContainer {
+  padding: 10px;
+  width: 100vw;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
 .imgmusics {
   padding: 5px;
 }
@@ -115,22 +111,21 @@ nav img {
   width: 300px;
   padding: 3px;
   margin: 5px;
-  border: solid rgb(255, 255, 0);
+  border: solid #bd0000;
   border-radius: 25px;
-  filter: grayscale(100%);
   cursor: pointer;
 }
 
 .imgmusics img:hover {
   filter: grayscale(0%);
   animation: pulse 1.5s infinite;
-  box-shadow: 0px 0px 15px rgb(255, 255, 0), 0px 0px 15px rgb(255, 255, 0) inset;
+  box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
 }
 
 /* Ids */
 #Euzinho {
   border-radius: 25px;
-  border: solid rgb(255, 255, 0);
+  border: solid #bd0000;
   width: 300px;
   margin: 25px;
 }
@@ -168,7 +163,7 @@ nav img {
   box-shadow: 0px 0px 15px white, 0px 0px 15px white inset;
 }
 
-/* #back {
+#theme {
   width: auto;
   height: auto;
   border: none;
@@ -177,29 +172,22 @@ nav img {
   margin: 0px;
   margin-left: -10px;
   padding: 5px;
-} */
-
-#subContainer {
-  padding: 10px;
-  width: calc(100vw - 400px);
-  text-align: center;
-  display: grid;
-  place-items: center;
 }
 
-#ASbnt {
+#justbnt {
   width: min-content;
 }
 
-#back img {
+#theme img {
   height: 70px;
   width: 70px;
   margin: 0px;
   margin-left: 0px;
 }
 
-#back:hover {
+#theme:hover {
   background-color: #fff;
+  box-shadow: 0px 0px 15px white;
   cursor: pointer;
 }
 
@@ -223,6 +211,11 @@ nav img {
     border-bottom-left-radius: 15px;
   }
 
+  nav img {
+    width: 75vw;
+    height: 75vw;
+  }
+
   header {
     height: 30px;
   }
@@ -235,7 +228,11 @@ nav img {
     flex-direction: column;
   }
 
-  #subContainer {
+  .subContainer {
     width: auto;
+  }
+
+  button {
+    width: 330px;
   }
 }
