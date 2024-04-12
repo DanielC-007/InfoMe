@@ -68,14 +68,14 @@ img {
 } */
 
 nav {
-  width: 400px;
+  width: 500px;
   height: fit-content;
   background-color: #2c2c2c;
   text-align: center;
   border-bottom-right-radius: 15px;
 }
 
-nav img {
+nav iframe {
   width: 300px;
   height: 300px;
   border: solid #bd0000;
@@ -117,7 +117,6 @@ nav img {
 }
 
 .imgmusics img:hover {
-  filter: grayscale(0%);
   animation: pulse 1.5s infinite;
   box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
 }
@@ -170,7 +169,6 @@ nav img {
   border-radius: 100%;
   background-color: #000;
   margin: 0px;
-  margin-left: -10px;
   padding: 5px;
 }
 
@@ -187,7 +185,7 @@ nav img {
 
 #theme:hover {
   background-color: #fff;
-  box-shadow: 0px 0px 15px white;
+  box-shadow: 0px 0px 10px yellow, -10px -10px 15px yellow inset;
   cursor: pointer;
 }
 
@@ -216,7 +214,7 @@ nav img {
     border-bottom-left-radius: 15px;
   }
 
-  nav img {
+  nav iframe {
     width: 75vw;
     height: 75vw;
   }
