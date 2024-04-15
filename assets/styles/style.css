@@ -193,6 +193,11 @@ nav iframe {
   width: 80px;
 }
 
+#cred{
+  text-decoration: underline;
+  color: aqua;
+}
+
 /* sei lá */
 @keyframes pulse {
 
