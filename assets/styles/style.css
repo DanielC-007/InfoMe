@@ -1,17 +1,28 @@
+:root{
+  --corTema1: white;
+  --corTema2: black;
+  --corTema3: #dddddd;
+  --corTema4: #333333;
+  --corTema5: #f0f0f0;
+  --corTema6: #222222;
+  --corTemabnt1: blue;
+  --corTemabnt2: green;
+}
+
 * {
   padding: 0px;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: var(--corTema2);
 }
 
 /*Itens no geral */
 body {
-  background-color: black;
+  background-color: var(--corTema1);
 }
 
 header {
-  background-color: #1c1c1c;
+  background-color: var(--corTema3);
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -19,10 +30,6 @@ header {
   padding: 10px;
   height: 65px;
 }
-
-/* header h1{
-  margin-top: 1vw;
-} */
 
 p {
   margin: 10px;
@@ -35,8 +42,7 @@ a {
 }
 
 button {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--corTema1);
   font-size: 40px;
   padding: 10px;
   border-radius: 25px;
@@ -49,7 +55,7 @@ button {
 }
 
 button:hover {
-  background-color: #2c2c2c;
+  background-color: var(--corTema5);
   cursor: pointer;
   box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
 }
@@ -70,7 +76,7 @@ img {
 nav {
   width: 500px;
   height: fit-content;
-  background-color: #2c2c2c;
+  background-color: var(--corTema5);
   text-align: center;
   border-bottom-right-radius: 15px;
 }
@@ -155,11 +161,11 @@ nav iframe {
 }
 
 #gitbnt {
-  border-color: #fff;
+  border-color: var(--corTema2);
 }
 
 #gitbnt:hover {
-  box-shadow: 0px 0px 15px white, 0px 0px 15px white inset;
+  box-shadow: 0px 0px 15px var(--corTema2), 0px 0px 15px var(--corTema2) inset;
 }
 
 #theme {
@@ -167,7 +173,7 @@ nav iframe {
   height: 80px;
   border: none;
   border-radius: 100%;
-  background-color: #000;
+  background-color: var(--corTema1);
   margin: 0px;
   padding: 5px;
 }
@@ -184,8 +190,8 @@ nav iframe {
 }
 
 #theme:hover {
-  background-color: #fff;
-  box-shadow: 0px 0px 10px yellow, -10px -10px 15px yellow inset;
+  background-color: var(--corTema2);
+  box-shadow: 0px 0px 10px var(--corTemabnt1), -10px -10px 15px var(--corTemabnt1) inset;
   cursor: pointer;
 }
 
