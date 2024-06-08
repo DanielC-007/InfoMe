@@ -195,12 +195,24 @@ nav iframe {
   cursor: pointer;
 }
 
-#box{
+#back {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80px;
   height: 80px;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  margin: 0px;
+  padding: 5px;
+}
+
+#back img {
+  height: 70px;
+  width: 70px;
+  margin: 0px;
+  margin-top: 5px;
 }
 
 #cred{
@@ -266,13 +278,13 @@ nav iframe {
     height: 35px;
   }
 
-  #box{
-    width: 30px;
-    height: 30px;
+  #back{
+    width: 35px;
+    height: 35px;
   }
 
-  #box img{
-    height: 40px;
-    width: 40px;
+  #back img{
+    height: 45px;
+    width: 45px;
   }
 }
