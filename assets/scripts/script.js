@@ -7,12 +7,14 @@ function off() {
 function OnOffPart() {
   var x = document.getElementById("x");
   var embed = document.getElementById("divPart");
+  var body = document.body;
 
   if (x.style.visibility == "hidden" || x.style.visibility == "") {
     x.style.visibility = "visible";
     embed.style.visibility = "visible";
     embed.style.animation = "donwDiv 1s";
     embed.style.transform = "TranslateY(0px)";
+    body.style.overflow = "hidden";
   } else {
     x.style.visibility = "hidden";
     embed.style.animation = "upDiv 1s";
@@ -20,6 +22,7 @@ function OnOffPart() {
     setTimeout(function delay() {
       embed.style.visibility = "hidden";
     }, 500);
+    body.style.overflow = "visible";
   }
 }
 
