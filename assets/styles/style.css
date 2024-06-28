@@ -303,7 +303,7 @@ nav iframe {
     font-size: 20px;
   }
 
-  button {
+  div button {
     width: 330px;
   }
 
@@ -338,14 +338,14 @@ nav iframe {
   }
 
   #divPart{
-    height: 650px;
-    width: 400px;
-    margin-top: calc(50vh - 650px /2);
-    margin-left: calc(50vw - 400px /2);
+    height: 600px;
+    width: 350px;
+    margin-top: calc(50vh - 600px /2);
+    margin-left: calc(50vw - 350px /2);
   }
 
   #divPart embed{
-    height: 600px;
-    width: 350px;
+    height: 550px;
+    width: 300px;
   }
 }
