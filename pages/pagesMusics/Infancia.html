@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/styles/style.css">
-    <link rel="icon" href="../../public/imgs/incon.png">
-    <script src="../../assets/scripts/script.js">JS</script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/styles/style.css" />
+    <link rel="icon" href="../../public/imgs/incon.png" />
+    <script src="../../assets/scripts/script.js"></script>
     <title>Infância</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <button onclick="OnOffPart()" id="x"></button>
+    <div id="divPart">
+      <embed src="../../public/pdfs/Infância.pdf" />
+    </div>
     <header>
-        <button id="back"><a href="../infoMusics.html"><img src="../../public/imgs/back.png"></a></button>
-        <h1>Infância</h1>
-        <button id="theme" onClick="toggleTheme()"><img id="sunMoon" src="../../public/imgs/sun.png"></button>
+      <button id="back">
+        <a href="../infoMusics.html"
+          ><img src="../../public/imgs/back.png"
+        /></a>
+      </button>
+      <h1>Infância</h1>
+      <button id="theme" onClick="toggleTheme()">
+        <img id="sunMoon" src="../../public/imgs/sun.png" />
+      </button>
     </header>
     <main class="container2">
-        <nav>
-            <iframe src="https://www.youtube.com/embed/rpuSPMyBVeY?si=8NY9REUdktDgZ6NY"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Desta vez eu queria fazer uma música em tom maior, porque a Lembrança e a
-                Transformação estão em tons menores. Em outras palavras, tenho mais facilidade em criar músicas sérias,
-                tristes e melancólicas do que músicas alegres, então foi mais um desafio para mim mesmo. A música
-                parecia uma cantiga ou uma música infantil, nada mais justo do que nomeá-la de Infância. E para a capa,
-                uma bola de futebol, algo que marcou a infância de várias pessoas, especialmente dos adultos.</p>
-        </nav>
-        <div class="subContainer">
-            <div id="justbnt">
-                <h3>Disponível no:</h3>
-                <a target="_blank" href="https://youtu.be/rpuSPMyBVeY?si=wa47WtsURDC2ylFq"><button id="ytbnt"><img src="../../public/imgs/YT.png">YouTube</button></a>
-                <a target="_blank" href="https://www.tiktok.com/@danielcarlos80bpm/video/7309114469496409350"><button id="tikbnt"><img src="../../public/imgs/Tik.png">TikTok</button></a>
-                <a target="_blank" href="https://github.com/DanielC-007/Partituras/tree/main/Instrumental%20Original/Inf%C3%A2ncia"><button id="gitbnt"><img src="../../public/imgs/git.png">Github</button>
-                </a>
-            </div>
+      <nav>
+        <iframe
+          src="https://www.youtube.com/embed/rpuSPMyBVeY?si=8NY9REUdktDgZ6NY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Desta vez eu queria fazer uma música em tom maior, porque a Lembrança
+          e a Transformação estão em tons menores. Em outras palavras, tenho
+          mais facilidade em criar músicas sérias, tristes e melancólicas do que
+          músicas alegres, então foi mais um desafio para mim mesmo. A música
+          parecia uma cantiga ou uma música infantil, nada mais justo do que
+          nomeá-la de Infância. E para a capa, uma bola de futebol, algo que
+          marcou a infância de várias pessoas, especialmente dos adultos.
+        </p>
+      </nav>
+      <div class="subContainer">
+        <div id="justbnt">
+          <h3>Disponível no:</h3>
+          <a
+            target="_blank"
+            href="https://youtu.be/rpuSPMyBVeY?si=wa47WtsURDC2ylFq"
+            ><button id="ytbnt">
+              <img src="../../public/imgs/YT.png" />YouTube
+            </button></a
+          >
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@danielcarlos80bpm/video/7309114469496409350"
+            ><button id="tikbnt">
+              <img src="../../public/imgs/Tik.png" />TikTok
+            </button></a
+          >
+          <a
+            target="_blank"
+            href="https://github.com/DanielC-007/Partituras/tree/main/Instrumental%20Original/Inf%C3%A2ncia"
+            ><button id="gitbnt">
+              <img src="../../public/imgs/git.png" />Github
+            </button>
+          </a>
+          <button onclick="OnOffPart()">
+            <img src="../../public/imgs/part.png" />Partitura
+          </button>
         </div>
+      </div>
     </main>
     <!-- <footer>Daniel Carlos Silva Pinto</footer> -->
-</body>
-
+  </body>
 </html>

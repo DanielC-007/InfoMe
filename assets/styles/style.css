@@ -41,7 +41,7 @@ a {
   text-decoration: none;
 }
 
-button {
+div button {
   background-color: var(--corTema1);
   font-size: 40px;
   padding: 10px;
@@ -54,7 +54,7 @@ button {
   height: 100px;
 }
 
-button:hover {
+div button:hover, #back:hover{
   background-color: var(--corTema5);
   cursor: pointer;
   box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
@@ -88,7 +88,8 @@ nav iframe {
   border-radius: 25px;
 }
 
-/* Classes */
+/*! Classes */
+
 .container {
   display: flex;
   align-items: center;
@@ -127,7 +128,39 @@ nav iframe {
   box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
 }
 
-/* Ids */
+/*! Ids */
+
+#x{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  border: none;
+  visibility: hidden;
+}
+
+#divPart{
+  height: 700px;
+  width: 500px;
+  margin-top: calc(50vh - 700px / 2);
+  margin-left: calc(50vw - 500px / 2);
+  background-color: var(--corTema5);
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-200%);
+  visibility: hidden;
+  animation: upDiv 1s;
+}
+
+#divPart embed{
+  height: 650px;
+  width: 450px;
+  border-radius: 10px;
+}
+
 #Euzinho {
   border-radius: 25px;
   border: solid #bd0000;
@@ -220,7 +253,7 @@ nav iframe {
   color: aqua;
 }
 
-/* sei lá */
+/*! Animações */
 @keyframes pulse {
 
   0%,
@@ -233,9 +266,25 @@ nav iframe {
   }
 }
 
-/* Ajuste para dispositivos móveis */
+@keyframes donwDiv{
+  from{
+    transform: translateY(-200%);
+  } to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes upDiv{
+  from{
+    transform: translateY(0px);
+  } to {
+    transform: translateY(-200%);
+  }
+}
+
+/*! Ajuste para dispositivos móveis */
 @media only screen and (max-width: 600px) {
-  /* items no geral */
+  /* todo items no geral */
   nav {
     width: auto;
     border-bottom-left-radius: 15px;
@@ -258,7 +307,7 @@ nav iframe {
     width: 330px;
   }
 
-  /*classes*/
+  /*todo classes*/
   .container2 {
     flex-direction: column;
   }
@@ -267,7 +316,7 @@ nav iframe {
     width: auto;
   }
 
-  /*ids*/
+  /*todo ids*/
   #theme{
     width: 45px;
     height: 45px;

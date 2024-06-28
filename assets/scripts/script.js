@@ -4,6 +4,25 @@ function off() {
   alert("Esta função está temporariamente desativada");
 }
 
+function OnOffPart() {
+  var x = document.getElementById("x");
+  var embed = document.getElementById("divPart");
+
+  if (x.style.visibility == "hidden" || x.style.visibility == "") {
+    x.style.visibility = "visible";
+    embed.style.visibility = "visible";
+    embed.style.animation = "donwDiv 1s";
+    embed.style.transform = "TranslateY(0px)";
+  } else {
+    x.style.visibility = "hidden";
+    embed.style.animation = "upDiv 1s";
+    embed.style.transform = "TranslateY(-200%)";
+    setTimeout(function delay() {
+      embed.style.visibility = "hidden";
+    }, 500);
+  }
+}
+
 if (!localStorage.getItem("theme")) {
   localStorage.setItem("theme", "light");
 }
