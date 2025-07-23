@@ -1,4 +1,4 @@
-:root{
+:root {
   --corTema1: white;
   --corTema2: black;
   --corTema3: #dddddd;
@@ -54,7 +54,8 @@ div button {
   height: 100px;
 }
 
-div button:hover, #back:hover{
+div button:hover,
+#back:hover {
   background-color: var(--corTema5);
   cursor: pointer;
   box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
@@ -130,7 +131,7 @@ nav iframe {
 
 /*! Ids */
 
-#x{
+#x {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
@@ -139,7 +140,7 @@ nav iframe {
   visibility: hidden;
 }
 
-#divPart{
+#divPart {
   height: 700px;
   width: 500px;
   margin-top: calc(50vh - 700px / 2);
@@ -155,7 +156,7 @@ nav iframe {
   animation: upDiv 1s;
 }
 
-#divPart embed{
+#divPart embed {
   height: 650px;
   width: 450px;
   border-radius: 10px;
@@ -172,6 +173,14 @@ nav iframe {
   border-color: red;
 }
 
+#spobnt{
+  border-color: #1ed760;
+}
+
+#spobnt:hover {
+  box-shadow: 0px 0px 15px #1ed760, 0px 0px 15px #1ed760 inset;
+}
+
 #ytbnt:hover {
   box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
 }
@@ -186,7 +195,6 @@ nav iframe {
 
 #tikbnt {
   border-color: cyan;
-
 }
 
 #tikbnt:hover {
@@ -224,7 +232,8 @@ nav iframe {
 
 #theme:hover {
   background-color: var(--corTema2);
-  box-shadow: 0px 0px 10px var(--corTemabnt1), -10px -10px 15px var(--corTemabnt1) inset;
+  box-shadow: 0px 0px 10px var(--corTemabnt1),
+    -10px -10px 15px var(--corTemabnt1) inset;
   cursor: pointer;
 }
 
@@ -248,14 +257,13 @@ nav iframe {
   margin-top: 5px;
 }
 
-#cred{
+#cred {
   text-decoration: underline;
   color: aqua;
 }
 
 /*! Animações */
 @keyframes pulse {
-
   0%,
   100% {
     transform: scale(1);
@@ -266,18 +274,20 @@ nav iframe {
   }
 }
 
-@keyframes donwDiv{
-  from{
+@keyframes donwDiv {
+  from {
     transform: translateY(-200%);
-  } to {
+  }
+  to {
     transform: translateY(0px);
   }
 }
 
-@keyframes upDiv{
-  from{
+@keyframes upDiv {
+  from {
     transform: translateY(0px);
-  } to {
+  }
+  to {
     transform: translateY(-200%);
   }
 }
@@ -317,34 +327,34 @@ nav iframe {
   }
 
   /*todo ids*/
-  #theme{
+  #theme {
     width: 45px;
     height: 45px;
   }
 
-  #theme img{
+  #theme img {
     width: 35px;
     height: 35px;
   }
 
-  #back{
+  #back {
     width: 35px;
     height: 35px;
   }
 
-  #back img{
+  #back img {
     height: 45px;
     width: 45px;
   }
 
-  #divPart{
+  #divPart {
     height: 600px;
     width: 350px;
-    margin-top: calc(50vh - 600px /2);
-    margin-left: calc(50vw - 350px /2);
+    margin-top: calc(50vh - 600px / 2);
+    margin-left: calc(50vw - 350px / 2);
   }
 
-  #divPart embed{
+  #divPart embed {
     height: 550px;
     width: 300px;
   }
