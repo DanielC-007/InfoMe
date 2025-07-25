@@ -2,11 +2,35 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #f2f2f2;
 }
 
 body {
-    background-color: black;
+    background: linear-gradient(-45deg, #bd0000, #4b0000, #000000, #ff6b3d);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #Euzin {
@@ -14,14 +38,25 @@ body {
     width: auto;
     border: solid #bd0000;
     border-radius: 50%;
+    animation: pulse 15s infinite alternate, spin 1s infinite alternate;
+}
+
+@keyframes spin {
+    100% {
+        box-shadow: 0 0 20px #bd0000;
+    }
+
+    0% {
+        box-shadow: 0 0 20px #000000;
+    }
 }
 
 .container {
-    margin-top: calc(50vh - (525px / 2));
     display: flex;
     justify-content: center;
     align-items: center;
     height: 525px;
+    flex: 1;
 }
 
 .container div {
@@ -32,14 +67,18 @@ body {
     text-align: center;
 }
 
-.bnts{
+.subContainer h2 {
+    margin: 15px 0;
+}
+
+.bnts {
     display: flex;
     flex-direction: column;
 }
 
 .bnts a {
     border: solid 2px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -47,6 +86,22 @@ body {
     padding: 10px;
     font-size: 20px;
     width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.bnts a:hover {
+    animation: pulse 0.5s;
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(1.05);
+    }
+
+    0% {
+        transform: scale(1);
+    }
 }
 
 .bnts a img {
@@ -55,9 +110,16 @@ body {
     margin: 0 15px;
 }
 
+footer {
+    background-color: #1a1a1a;
+    padding: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
 /*! bnts */
 
-#ytbnt{
+#ytbnt {
     border-color: red;
 }
 
@@ -90,11 +152,11 @@ body {
 }
 
 #gitbnt {
-    border-color: white;
+    border-color: #f2f2f2;
 }
 
 #gitbnt:hover {
-    box-shadow: 0px 0px 10px white, 0px 0px 10px white inset;
+    box-shadow: 0px 0px 10px #f2f2f2, 0px 0px 10px #f2f2f2 inset;
 }
 
 /** ajuste mobile */
