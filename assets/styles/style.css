@@ -1,3 +1,17 @@
+:root {
+    --vermelho-vibrante: #bd0000;
+    --preto-puro: #000000;
+    --cinza-carvao: #1a1a1a;
+    --cinza-medio: #666666;
+    --cinza-claro: #dddddd;
+    --branco-gelo: #f2f2f2;
+    --laranja-queimado: #ff6b3d;
+    --amarelo-ouro: #ffcc00;
+    --vinho-escuro: #4b0000;
+    --roxo-escuro: #5e17eb;
+    --azul-petroleo: #005f73;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -38,16 +52,16 @@ body {
     width: auto;
     border: solid #bd0000;
     border-radius: 50%;
-    animation: pulse 15s infinite alternate, spin 1s infinite alternate;
+    animation: pulse 5s infinite alternate, sombraOnOff 1s infinite alternate;
 }
 
-@keyframes spin {
+@keyframes sombraOnOff {
     100% {
-        box-shadow: 0 0 20px #bd0000;
+        box-shadow: 0 0 25px #bd0000;
     }
 
     0% {
-        box-shadow: 0 0 20px #000000;
+        box-shadow: none;
     }
 }
 
@@ -90,7 +104,7 @@ body {
 }
 
 .bnts a:hover {
-    animation: pulse 0.5s;
+    animation: pulse 0.3s;
     transform: scale(1.05);
 }
 
