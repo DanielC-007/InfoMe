@@ -87,7 +87,10 @@ body {
 
 .bnts {
     display: flex;
-    flex-direction: column;
+}
+
+.bnts div {
+    margin: 5px;
 }
 
 .bnts a {
