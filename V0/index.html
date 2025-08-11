@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Carlos - Clarinetista Profissional</title>
+    <meta name="description" content="Daniel Carlos - Clarinetista profissional especializado em música clássica, jazz e MPB. Confira meu trabalho e entre em contato.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Daniel Carlos</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#repertoire" class="nav-link">Repertório</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-notes">
+                <div class="note note-1">♪</div>
+                <div class="note note-2">♫</div>
+                <div class="note note-3">♪</div>
+                <div class="note note-4">♫</div>
+                <div class="note note-5">♪</div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <div class="profile-glow"></div>
+                        <img src="assets/profile.jpeg" alt="Daniel Carlos - Clarinetista" class="profile-image">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="hero-title">Daniel Carlos</h1>
+                        <p class="hero-subtitle">Clarinetista Profissional</p>
+                        <p class="hero-username">@danielc.80bpm</p>
+                        <p class="hero-description">
+                            Transformando melodias em emoções através do clarinete. 
+                            Especialista em música clássica, jazz e MPB.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                                <i class="fas fa-envelope"></i>
+                                Entre em Contato
+                            </button>
+                            <button class="btn btn-secondary" onclick="window.open('https://youtube.com/@danielc.80bpm?si=H8uheWWFmwJHILa0', '_blank')">
+                                <i class="fas fa-play"></i>
+                                Ouça Meu Trabalho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://youtube.com/@danielc.80bpm?si=H8uheWWFmwJHILa0" target="_blank" class="social-card youtube">
+                        <div class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>YouTube</h3>
+                            <p>Performances e covers</p>
+                        </div>
+                        <i class="fas fa-external-link-alt social-arrow"></i>
+                    </a>
+
+                    <a href="https://open.spotify.com/intl-pt/artist/4wocNBv3KY7H2nYIH2Q1QS?si=XDeZd_b0T9uBH6cY4NVDGw" target="_blank" class="social-card spotify">
+                        <div class="social-icon">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Spotify</h3>
+                            <p>Minhas gravações</p>
+                        </div>
+                        <i class="fas fa-external-link-alt social-arrow"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/danielc.80bpm/" target="_blank" class="social-card instagram">
+                        <div class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Instagram</h3>
+                            <p>Bastidores e dia a dia</p>
+                        </div>
+                        <i class="fas fa-external-link-alt social-arrow"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@danielcarlos80bpm?is_from_webapp=1&sender_device=pc" target="_blank" class="social-card tiktok">
+                        <div class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>TikTok</h3>
+                            <p>Vídeos curtos e trends</p>
+                        </div>
+                        <i class="fas fa-external-link-alt social-arrow"></i>
+                    </a>
+
+                    <a href="https://github.com/DanielC-007/Partituras" target="_blank" class="social-card github">
+                        <div class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Partituras</h3>
+                            <p>Partituras no GitHub</p>
+                        </div>
+                        <i class="fas fa-external-link-alt social-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">
+                    Com mais de 15 anos de experiência, dedico-me à arte do clarinete explorando diversos gêneros musicais.
+                    Minha paixão é conectar pessoas através da música.
+                </p>
+            </div>
+
+            <div class="achievements">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>15+ Anos</h3>
+                    <p>de experiência musical</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>500+</h3>
+                    <p>apresentações realizadas</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>50+</h3>
+                    <p>composições próprias</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3>2024</h3>
+                    <p>último álbum lançado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repertoire Section -->
+    <section id="repertoire" class="repertoire">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Repertório</h2>
+                <p class="section-subtitle">
+                    Explore os diferentes gêneros musicais que domino e apresento regularmente.
+                </p>
+            </div>
+
+            <div class="repertoire-grid">
+                <div class="repertoire-item">
+                    <i class="fas fa-violin"></i>
+                    <h3>Música Clássica</h3>
+                </div>
+                <div class="repertoire-item">
+                    <i class="fas fa-guitar"></i>
+                    <h3>Jazz</h3>
+                </div>
+                <div class="repertoire-item">
+                    <i class="fas fa-drum"></i>
+                    <h3>Música Popular Brasileira</h3>
+                </div>
+                <div class="repertoire-item">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Música de Câmara</h3>
+                </div>
+                <div class="repertoire-item">
+                    <i class="fas fa-film"></i>
+                    <h3>Trilhas Sonoras</h3>
+                </div>
+                <div class="repertoire-item">
+                    <i class="fas fa-compact-disc"></i>
+                    <h3>Música Contemporânea</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos Fazer Música Juntos</h2>
+                <p class="section-subtitle">
+                    Interessado em colaborações, apresentações ou aulas? Entre em contato e vamos criar algo especial.
+                </p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>daniel@exemplo.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Telefone</h3>
+                        <p>(11) 99999-9999</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Localização</h3>
+                        <p>São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Daniel Carlos Estudio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
